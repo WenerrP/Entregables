@@ -2,17 +2,16 @@
 #include <math.h>
 /* Par, impar o nulo.
 NUM: variable de tipo entero. */
-void main(void) //Es el punto de entrada al programa
+void main(void)
 {
-  int NUM; //Define variables numericas con numeros de tipo entero
-  printf("Ingrese el número: "); //Presenta en la pantalla algun dato
-  scanf("%d", &NUM); //Lee caracteres ingresados desde el teclado
-  if (NUM == 0) //Se utiliza para establece una condicion
-    printf("\nNulo"); /* En caso de que la condicion sea verdadera, 
-    se va a presentar esto por pantalla */
-  else //En caso de que sea falso, se ejecutaran los algoritmos que lo sucedan
+  int NUM;
+  printf("Ingrese el número: ");
+  scanf("%d", &NUM);
+  if (NUM == 0)
+    printf("\nNulo");
+  else
     if (pow (-1, NUM) > 0)
       printf("\nPar");
     else
       printf("\nImpar");
-} //Fin de programa
+}

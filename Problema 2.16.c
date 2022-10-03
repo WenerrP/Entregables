@@ -1,17 +1,15 @@
-# include <stdio.h> //Libreria
+# include <stdio.h>
 /* Empresa textil.
 El programa, al recibir como datos decisivos la categoría y antigüedad de
-un empleado, determina si el mismo reúne las condiciones establecidas por
-la empresa para ocupar un nuevo cargo en una sucursal. 
+➥un empleado, determina si el mismo reúne las condiciones establecidas por
+➥la empresa para ocupar un nuevo cargo en una sucursal. 
 CLA, CAT, ANT, RES: variables de tipo entero.
 SAL: variable de tipo real. */
-void main(void) //Es el punto de entrada al programa
+void main(void)
 {
-  int CLA, CAT, ANT, RES; //Define variables numericas con numeros de tipo entero
+  int CLA, CAT, ANT, RES;
   printf("\nIngrese la clave, categoría y antigüedad del trabajador: ");
-  //Presenta en la pantalla algun dato
   scanf("%d %d %d", &CLA, &CAT, &ANT);
-  //Lee caracteres ingresados desde el teclado
   switch(CAT)
   {
     case 3:
@@ -32,4 +30,4 @@ void main(void) //Es el punto de entrada al programa
     printf("\nEl trabajador con clave %d reúne las condiciones para el puesto", CLA);
   else
     printf("\nEl trabajador con clave %d no reúne las condiciones para el puesto", CLA);
-} //Fin del programa
+}
