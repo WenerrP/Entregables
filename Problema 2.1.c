@@ -1,4 +1,4 @@
-#include <stdio.h> //Libreria
+#include <stdio.h>
 /* Promedio curso.
 El programa, al recibir como dato el promedio de un alumno en un curso
 universitario, escribe aprobado si su promedio es mayor o igual a 6.
@@ -8,6 +8,6 @@ void main(void) //Es el punto de entrada al programa
   float PRO; //Tipo de datos flotantes, define valores numericos con puntos decimales
   printf("ingrese el promedio del alumno: "); //Presenta en la pantalla algun dato
   scanf("%f", &PRO); //Lee caracteres ingresados desde el teclado
-  if (PRO >= 6) //Se utiliza para establece una condicion
+  if (PRO >= 6)
     printf("\nAprobado");
-} //Fin del programa
+}
