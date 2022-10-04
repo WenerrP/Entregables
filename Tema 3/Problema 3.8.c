@@ -20,4 +20,6 @@ void main (void)
     }
     else
         printf("\nError en dato ingresado");
+    
+      
 }
