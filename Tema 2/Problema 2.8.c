@@ -10,7 +10,7 @@ void main(void)
   int MAT, CAR, SEM;
   float PRO;
   printf("Ingrese matrícula: ");
-  scanf(“%d”, &MAT);
+  scanf("%d", &MAT);
   printf("Ingrese carrera (1-Industrial 2-Telemática 3-Computación 4-Mecánica): ");
   scanf("%d", &CAR);
   printf("Ingrese semestre: ");

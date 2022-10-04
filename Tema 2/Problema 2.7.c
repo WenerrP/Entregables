@@ -24,5 +24,5 @@ void main(void)
   else
     printf("\n\n El orden es S, R y P: %8.2f %8.2f %8.2f", S, R, P);
   else
-    printf("\n\n El orden es R, S y P: %8.2f %8.2f %8.2f" R, S, P);
+    printf("\n\n El orden es R, S y P: %8.2f %8.2f %8.2f", R, S, P);
 }

@@ -8,7 +8,7 @@ void main(void) //Es el punto de entrada al programa
 {
   int OP, T; //Define variables numericas con numeros de tipo entero
   float RES; //Se utiliza para los numeros con puntos decimales
-  printf("Ingrese la opción del cálculo y el valor entero: "); //Presenta en la pantalla algun dato
+  printf("Ingrese la opcion del calculo y el valor entero: "); //Presenta en la pantalla algun dato
   scanf("%d %d", &OP, &T); //Lee caracteres ingresados desde el teclado
   switch(OP) /*Permite selccionar el bloque de instucciones que se va a 
   ejecutar dentro de varias opciones */
