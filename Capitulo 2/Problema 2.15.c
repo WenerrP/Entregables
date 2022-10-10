@@ -1,8 +1,8 @@
 #include <stdio.h>
 /* Spa.
 El programa, al recibir como datos el tipo de tratamiento, la edad y el
-➥número de días de internación de un cliente en un spa, calcula el costo
-➥total del tratamiento.
+número de días de internación de un cliente en un spa, calcula el costo
+total del tratamiento.
 TRA, EDA, DIA: variables de tipo entero.
 COS: variable de tipo real. */
 void main(void)

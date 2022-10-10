@@ -2,7 +2,7 @@
 #include <math.h>
 /* Expresión.
 El programa, al recibir como datos tres valores enteros, establece si los
-➥mismos satisfacen una expresión determinada.
+mismos satisfacen una expresión determinada.
 R, T y Q: variables de tipo entero.
 RES: variable de tipo real. */
 void main(void)

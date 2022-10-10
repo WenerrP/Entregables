@@ -2,7 +2,7 @@
 #include <math.h>
 /* Función.
 El programa, al recibir como dato un valor entero, calcula el resultado de 
-➥una función.
+una función.
 Y: variable de tipo entero.
 X: variable de tipo real. */
 void main(void)
