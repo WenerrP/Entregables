@@ -7,7 +7,7 @@ de los lanzamientos de la atleta cubana.
 I, N: variables de tipo entero.
 LAN, SLA: variables de tipo real. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I, N;
     float LAN, SLA = 0;

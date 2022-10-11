@@ -5,7 +5,7 @@ y el promedio de un alumno de una universidad privada, determina si
 éste puede ser asistente de su carrera. 
 MAT, CAR y SEM: variables de tipo entero.
 PRO: variable de tipo real. */
-void main(void)
+void main(void) //Es el punto de entrada al programa
 {
   int MAT, CAR, SEM;
   float PRO;

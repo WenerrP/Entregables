@@ -5,7 +5,7 @@ cuenta la distancia entre las dos ciudades y el tiempo de permanencia
 del pasajero.
 DIS y TIE: variables de tipo entero.
 BIL: variable de tipo real. */
-void main(void)
+void main(void) //Es el punto de entrada al programa
 {
   int DIS, TIE;
   float BIL;

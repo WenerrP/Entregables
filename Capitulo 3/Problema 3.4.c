@@ -4,7 +4,7 @@
 El programa, al recibir como datos un grupo de enteros positivos, obtiene el
 cuadrdo de los mismos y la suma correspondiente a dichos cuadros. */
 
-void main (void)
+void main (void) //Sirve como punto de entrada del programa
 {
     int NUM;
     long CUA, SUC = 0;

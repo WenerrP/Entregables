@@ -7,7 +7,7 @@ o reprobado en caso contrario.
 
 PRO: variable de tipo real.  */
 
-void main (void)
+void main (void) //Es el punto de entrada al programa
 {
     float PRO;
     printf("Ingrese el promedio del alumno: ");

@@ -5,7 +5,7 @@ un empleado, determina si el mismo reúne las condiciones establecidas por
 la empresa para ocupar un nuevo cargo en una sucursal. 
 CLA, CAT, ANT, RES: variables de tipo entero.
 SAL: variable de tipo real. */
-void main(void)
+void main(void) //Es el punto de entrada al programa
 {
   int CLA, CAT, ANT, RES;
   printf("\nIngrese la clave, categoría y antigüedad del trabajador: ");

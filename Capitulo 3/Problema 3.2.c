@@ -6,7 +6,7 @@ enteros positivos
 
 I, N, NUM, SUM: variables de tipo entero. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I, N, NUM, SUM;
     SUM = 0;

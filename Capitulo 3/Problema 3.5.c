@@ -4,7 +4,7 @@ El programa obtiene la suma de los pagos realizados el ultimo mes.
 
 PAG y SPA: variables de tipo real. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     float PAG, SPA = 0;
     printf("Ingrese el primer pago:\t");

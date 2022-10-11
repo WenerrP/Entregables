@@ -4,7 +4,7 @@ El programa, al recibir como dato el precio de un producto importado,
 incrementa 11% el mismo si este  es inferior a $1,500.
 PRE y NPR> variable de tipo real. */
 
-void main (void)
+void main (void) //Es el punto de entrada al programa
 {
     float PRE, NPR;
     printf("Ingrese el precio del producto: ");

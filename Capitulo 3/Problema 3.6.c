@@ -7,7 +7,7 @@ universidad, obtiene la nomina y el promedio de los salarios.
 I: variable de tipo entero.
 SAL, NOM y PRO: variables de tipo real. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I = 0;
     float SAL, PRO, NOM = 0;

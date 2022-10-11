@@ -6,7 +6,7 @@ mismo 11% si es menor a 1500$ y 8% en caso contrario (mayor o igual).
 
 PRE y NPR: variables de tipo real. */
 
-void main (void)
+void main (void) //Es el punto de entrada al programa
 {
     float PRE, NPR;
     printf("Ingrese el precio del producto: ");

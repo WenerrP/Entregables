@@ -6,7 +6,7 @@ mes, obtiene la suma de los mismos.
 
 PAG y SPA: variables de tipo real. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     float PAG, SPA;
     SPA = 0;

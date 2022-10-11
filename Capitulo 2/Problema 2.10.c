@@ -2,7 +2,7 @@
 #include <math.h>
 /* Par, impar o nulo.
 NUM: variable de tipo entero. */
-void main(void)
+void main(void) //Es el punto de entrada al programa
 {
   int NUM;
   printf("Ingrese el número: ");

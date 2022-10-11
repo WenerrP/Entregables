@@ -5,12 +5,13 @@ El programa calcula el factorial de un numero entero.
 
 FAC, I, NUM: variables de tipo entero. */
 
-void main (void)
+void main (void) //Sirve como punto de entrada del programa
 {
     int I, NUM;
     long FAC;
     printf("\nIngrese el numero: ");
     scanf("%d", NUM);
+    
     if (NUM >= 0);
     {
         FAC = 1;

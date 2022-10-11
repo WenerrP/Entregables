@@ -4,7 +4,7 @@ El programa, al recibir como datos la clave de la zona geográfica y el
 número de segundos de una llamada telefónica, calcula el costo de la misma.
 CLA y TIE: variables de tipo entero.
 COS: variable de tipo real. */
-void main(void)
+void main(void) //Es el punto de entrada al programa
 {
   int CLA, TIE;
   float COS;
