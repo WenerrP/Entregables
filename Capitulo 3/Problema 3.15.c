@@ -7,24 +7,25 @@ RES: variable de tipo real de doble precisión. */
 
 void main(void) //Sirve como punto de entrada del programa
 {
-    int I = 1, B = 0, C;
+    int I = 1, B = 0, C; //Define variables numericas con numeros de tipo entero
     double RES;
     RES = 4.0 / I;
     C = 1;
-    while ((fabs (3.1415 - RES)) > 0.0005)
+    while ((fabs (3.1415 - RES)) > 0.0005)/* Ejecuta un bloque de instrucciones en un bucle siempre 
+    que esta condición sea verdadera */
     {
-        I += 2 ;
-        if (B)
+        I += 2 ; //Operacion aritmetica de suma
+        if (B) //Se utiliza para establece una condicion
         {
             RES += (double) (4.0 / I);
             B = 0;
         }
-        else
+        else //Si la condicion es falsa pasa a esta linea de codigo
         {
-            RES -= (double) (4.0 / I);
+            RES -= (double) (4.0 / I); //Operacion aitmetica
             B = 1;
         }
-        C++;
+        C++; //Incremento en uno de la varaible
     }
     printf("\nNumero de terminos:%d", C);
-}
+} //Fin del programa

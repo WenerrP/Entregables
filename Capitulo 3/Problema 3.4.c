@@ -13,7 +13,7 @@ void main (void) //Sirve como punto de entrada del programa
     scanf("%d", &NUM); //Lee caracteres ingresados desde el teclado
     while (NUM)
     /*Observa que la condicion es verdadera mientras el entero es diferente de cero. */
-    /* Permite selccionar el bloque de instucciones que se va a ejecutar dentro de varias opciones */
+    /* Ejecuta un bloque de instrucciones en un bucle siempre que esta condición sea verdadera */
     {
         CUA = pow (NUM, 2);
         printf ("%d al cubo es %ld", NUM, CUA);

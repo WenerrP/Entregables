@@ -22,8 +22,8 @@ void main(void) //Sirve como punto de entrada del programa
          printf("Ingrese el salario del profesor -0 para temrinar -:\t");
         scanf("%f", &SAL);
     }
-    while (SAL); /*Permite selccionar el bloque de instucciones que se va a 
-    ejecutar dentro de varias opciones */
+    while (SAL); /* Ejecuta un bloque de instrucciones en un bucle siempre 
+    que esta condición sea verdader */
     PRO = NOM / I; /* Operacion aritmetica de division de una variable 
     dentro de otra variable */
     printf("\nNomina: %2f \t Promedio de salarios: %.2f", NOM, PRO);
