@@ -9,12 +9,12 @@ PRO: variable de tipo real.  */
 
 void main (void) //Es el punto de entrada al programa
 {
-    float PRO;
-    printf("Ingrese el promedio del alumno: ");
-    scanf("%f", &PRO);
-    if (PRO >= 6.0)
-        printf ("\nAprobado");
+    float PRO; //Tipo de datos flotantes, define valores numericos con puntos decimales
+    printf("Ingrese el promedio del alumno: "); //Presenta en la pantalla algun dato
+    scanf("%f", &PRO); //Lee caracteres ingresados desde el teclado
+    if (PRO >= 6.0) //Se utiliza para establece una condicion
+        printf ("\nAprobado"); //Si la condicion verdadera, presentara esto en pantalla
     else
-        printf("\nReprobado");
+        printf("\nReprobado"); //En caso de que sea falta, presentara esto en pantalla
 
 }

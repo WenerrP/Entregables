@@ -7,7 +7,7 @@ numeros pares y calcula el promedio de los impares.
 
 I, N, NUM, SPA, SIM, CIM: variables de tipo entero. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I, N, NUM, SPA = 0, SIM = 0, CIM = 0;
     printf("Ingrese el numero de datos que se van a procesar:\t");

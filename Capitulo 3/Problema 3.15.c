@@ -5,7 +5,7 @@ El programa obtiene el valor de P aplicando una serie determinada.
 I, B, C: variables de tipo entero.
 RES: variable de tipo real de doble precisión. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I = 1, B = 0, C;
     double RES;

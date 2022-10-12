@@ -6,7 +6,7 @@ y peor promedio.
 I, MAT, MAMAT y MEMAT: variables de tipo entero.
 CAL, SUM, MAPRO, MEPRO y PRO: variables de tipo real.*/
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I, MAT, MAMAT, MEMAT;
     float SUM, PRO, CAL, MAPRO = 0.0, MEPRO = 11.0;

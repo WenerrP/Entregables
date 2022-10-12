@@ -30,17 +30,19 @@ int main() //Sirve como punto de entrada del programa
         }
         else //Si la condicion del if es falsa pasa a esta condicion
         {
-            for(cont = 1,b=x; !(b == (x/b)); cont++) //
+            for(cont = 1, b=x; !(b == (x / b)); cont++) /* Se define un 
+            entero que contendrá el contador */
             {
                 b=0.5*((x/b)+b);
-                if(tmp != b)
+                if(tmp != b) //Se utiliza para establece una condicion
                 {
                     printf("\nCiclo %d valor actual es: %lf\n",cont,b);
+                    //Presenta en la pantalla algun dato
                     tmp = b;
                 }
                 else
                 {
-                    break;
+                    break; //Se utiliza para salir de un ciclo
                 }
 
                 if(cont >100)
@@ -54,5 +56,5 @@ int main() //Sirve como punto de entrada del programa
     printf("\nFin de programa\n");
     //printf("\nRaiz cuadrada de %f es: %f\n",x,b);
     //printf("\nEl calculo fue realizado con %d cliclos", cont);
-    return 0;
+    return 0; //Regresas un valor de 0 para indicar que todo ha salido bien
 }

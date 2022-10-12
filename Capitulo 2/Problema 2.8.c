@@ -7,21 +7,24 @@ MAT, CAR y SEM: variables de tipo entero.
 PRO: variable de tipo real. */
 void main(void) //Es el punto de entrada al programa
 {
-  int MAT, CAR, SEM;
-  float PRO;
-  printf("Ingrese matrícula: ");
-  scanf("%d", &MAT);
+  int MAT, CAR, SEM; //Define variables numericas con numeros de tipo entero
+  float PRO; //Tipo de datos flotantes, define valores numericos con puntos decimales
+  printf("Ingrese matrícula: "); //Presenta en la pantalla algun dato
+  scanf("%d", &MAT); //Lee caracteres ingresados desde el teclado
   printf("Ingrese carrera (1-Industrial 2-Telemática 3-Computación 4-Mecánica): ");
   scanf("%d", &CAR);
   printf("Ingrese semestre: ");
   scanf("%d", &SEM);
   printf("Ingrese promedio: ");
   scanf("%f", &PRO);
-  switch(CAR)
+  switch(CAR) /*Permite selccionar el bloque de instucciones que se va a 
+  ejecutar dentro de varias opciones */
   {
-    case 1: if (SEM >= 6 && PRO >= 8.5)
+    case 1: if (SEM >= 6 && PRO >= 8.5) /* Dependiendo del valor de la variable, 
+    ejecuta un bloque de instrucciones, en este caso cuenta con un if dentro
+    dentro del bloque*/
     printf("\n%d %d %5.2f", MAT, CAR, PRO);
-      break;
+      break; //Finaliza la ejecucion del bucle
     case 2: if (SEM >= 5 && PRO >= 9.0)
     printf("\n%d %d %5.2f", MAT, CAR, PRO);
       break;
@@ -31,7 +34,7 @@ void main(void) //Es el punto de entrada al programa
     case 4: if (SEM >= 7 && PRO >= 9.0)
     printf("\n%d %d %5.2f", MAT, CAR, PRO);
       break;
-    default: printf("\n Error en la carrera");
+    default: printf("\n Error en la carrera"); //Para especificar el caso predeterminado en la instrucción switch.
       break;
   }
 }

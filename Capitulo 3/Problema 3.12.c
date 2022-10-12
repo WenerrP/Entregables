@@ -5,7 +5,7 @@ El programa, al recibir como dato un entero positivo, obtiene y escribe
 la serie de ULAM.
 
 NUM: variable de tipo entero. */
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int NUM;
     printf("Ingresa el numero para calcular la serie: ");

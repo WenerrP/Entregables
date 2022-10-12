@@ -4,7 +4,7 @@
     El programa imprime los terminos y obtiene la suma de una determinada serie.
     I, SSE y CAM: variable de tipo entero. */
 
-    void main(void)
+    void main(void) //Sirve como punto de entrada del programa
     {
     int I = 2, CAM = 1;
     long SSE = 0;

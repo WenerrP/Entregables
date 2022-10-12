@@ -22,7 +22,7 @@ void main(void) //Es el punto de entrada al programa
     case 3:
     case 4: RES = 6 * T/2;
       break;
-    default: RES = 1;
+    default: RES = 1; //Para especificar el caso predeterminado en la instrucción switch.
       break;
   }
   printf("\nResultado: %7.2f", RES); //Se imprime por pantalla el resultado de las operaciones

@@ -3,7 +3,7 @@
 El programa calcula y escribe los primeros 50 números de Fibonacci.
 I, PRI, SEG, SIG: variables de tipo entero. */
 
-void main(void)
+void main(void) //Sirve como punto de entrada del programa
 {
     int I, PRI = 0, SEG = 1, SIG;
     printf("\t%d \t%d", PRI, SEG); 
