@@ -16,5 +16,6 @@ void main (void) //Es el punto de entrada al programa
         operacion aritmetica */
     else //Si la condicion es falsa pasa a esta linea de codigo
         NPR = PRE * 1.08; // Operacion aritmetica
-    printf("\nNuevo precio del producto: %8.2f", NPR);
+    printf("\nNuevo precio del producto: %8.2f", NPR); /* Si la condicion es falsa
+    se presenta por pantalla el siguiente mensaje */
 }

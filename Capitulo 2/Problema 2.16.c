@@ -7,27 +7,33 @@ CLA, CAT, ANT, RES: variables de tipo entero.
 SAL: variable de tipo real. */
 void main(void) //Es el punto de entrada al programa
 {
-  int CLA, CAT, ANT, RES;
-  printf("\nIngrese la clave, categoría y antigüedad del trabajador: ");
-  scanf("%d %d %d", &CLA, &CAT, &ANT);
-  switch(CAT)
-  {
-    case 3:
-    case 4: if (ANT >= 5)
-      RES = 1;
-    else
-      RES = 0;
+    int CLA, CAT, ANT, RES; //Define variables numericas con numeros de tipo entero
+    printf("\nIngrese la clave, categoría y antigüedad del trabajador: ");
+    //Presenta en la pantalla algun dato
+    scanf("%d %d %d", &CLA, &CAT, &ANT);
+    //Lee caracteres ingresados desde el teclado
+    switch(CAT) /*Permite selccionar el bloque de instucciones que se va a 
+    ejecutar dentro de varias opciones */
+    {
+        case 3:/* Dependiendo del valor de la variable, 
+        ejecuta un bloque de instrucciones */
+        case 4: if (ANT >= 5)
+            RES = 1;
+        else
+            RES = 0;
+                break;
+        case 2: if (ANT >= 7)
+            RES = 1;
+        else
+            RES = 0;
+                break;
+        default: RES = 0; //Para especificar el caso predeterminado en la instrucción switch.
         break;
-    case 2: if (ANT >= 7)
-      RES = 1;
-    else
-      RES = 0;
-        break;
-    default: RES = 0;
-      break;
-  }
-  if (RES)
-    printf("\nEl trabajador con clave %d reúne las condiciones para el puesto", CLA);
-  else
-    printf("\nEl trabajador con clave %d no reúne las condiciones para el puesto", CLA);
+    }
+    if (RES) //Se utiliza para establece una condicion
+        printf("\nEl trabajador con clave %d reúne las condiciones para el puesto", CLA);
+        /* Si la condicion es verdadera se presenta por pantalla el siguiente mensaje */
+    else //Si la condicion es falsa pasa a esta linea de codigo
+        printf("\nEl trabajador con clave %d no reúne las condiciones para el puesto", CLA);
+        /* Si la condicion es falsa se presenta por pantalla el siguiente mensaje */
 }
