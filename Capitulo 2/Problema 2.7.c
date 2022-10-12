@@ -1,8 +1,8 @@
 #include <stdio.h>
 /* ventas descendentes.
 El programa, al recibir como datos tres valores que representan las ventas
-➥de los vendedores de una tienda de discos, escribe las ventas en
-➥orden descendente.
+de los vendedores de una tienda de discos, escribe las ventas en orden 
+descendente.
 P, S y R: variables de tipo real. */
 void main(void) //Es el punto de entrada al programa
 {
