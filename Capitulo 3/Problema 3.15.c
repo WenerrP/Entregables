@@ -27,5 +27,5 @@ void main(void) //Sirve como punto de entrada del programa
         }
         C++; //Incremento en uno de la varaible
     }
-    printf("\nNumero de terminos:%d", C);
+    printf("\nNumero de terminos:%d", C); //Presenta en la pantalla algun dato
 } //Fin del programa
