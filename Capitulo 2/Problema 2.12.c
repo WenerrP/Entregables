@@ -7,7 +7,8 @@ una expresión determinada.
 T, P y N: variables de tipo entero. */
 int main(void) // Es el punto de entrada al programa
 {
-  int T, P, N; // Define variables numericas con numeros de tipo entero
+  int P, N; // Define variables numericas con numeros de tipo entero
+  float T;
   printf("Ingrese los valores de T, P y N: "); // Presenta en la pantalla algun
                                                // dato
   scanf("%d %d %d", &T, &P, &N); // Lee caracteres ingresados desde el teclado
