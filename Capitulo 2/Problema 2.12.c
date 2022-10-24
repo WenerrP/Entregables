@@ -5,7 +5,7 @@
 El programa, al recibir como datos T, P y N, comprueba la igualdad de
 una expresión determinada.
 T, P y N: variables de tipo entero. */
-void main(void) // Es el punto de entrada al programa
+int main(void) // Es el punto de entrada al programa
 {
   int T, P, N; // Define variables numericas con numeros de tipo entero
   printf("Ingrese los valores de T, P y N: "); // Presenta en la pantalla algun
