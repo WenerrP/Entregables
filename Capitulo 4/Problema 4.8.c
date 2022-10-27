@@ -6,7 +6,7 @@ void funcion1(int *, int *);
  referencia. */
 int funcion2(int, int *);
 /* En este prototipo el primer parámetro es por valor y el segundo por referencia. */
-void main(void) 
+int main(void) 
 {
     int a; /* Nota que a es una variable local. */
     a = 1; /* Se asigna un valor a la variable local a. */

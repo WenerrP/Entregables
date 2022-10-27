@@ -18,7 +18,7 @@ dependiendo de cuál sea ésta, llama a la función Suma o Resta. */
     RES = (*apf)(X, Y); /* Se llama a la función Suma o Resta. */
     return (RES);
 }
-void main(void) 
+int main(void) 
 {
     int R1, R2;
     R1 = Control(Suma, 15, 5); /* Se pasa como parámetro la función Suma. */
