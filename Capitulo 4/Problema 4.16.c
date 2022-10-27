@@ -35,4 +35,33 @@ int main(void)
         por valor. */
         Minima(TEM, I);
     }
+    printf("\nPromedio del día : % 5.2f", (ACT / 24));
+    printf("\nMáxima del día : % 5.2f \tHora : % d", MAX, HMAX);
+    printf("\nMínima del día : % 5.2f \tHora : % d", MIN, HMIN);
+}
+void Acutem(float T)
+/* Esta función acumula las temperaturas en la variable global ACT
+para posteriormente calcular el promedio. */
+{
+    ACT += T;
+}
+void Maxima(float T, int H)
+/* Esta función almacena la temperatura máxima y la hora en que se
+produjo en las variables globales MAX y HMAX, respectivamente. */
+{
+    if (MAX < T) 
+    {
+        MAX = T;
+        HMAX = H;
+    }
+}
+void Minima(float T, int H)
+/* Esta función almacena la temperatura mínima y la hora en que se
+produjo en las variables globales MIN y HMIN. */
+{
+    if (MIN > T) 
+    {
+        MIN = T;
+        HMIN = H;
+    }
 }
