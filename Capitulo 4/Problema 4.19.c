@@ -10,9 +10,9 @@ int main(void)
     b = 2;
     c = 3;
     d = 4;
-    printf("\n % d % d % d % d", a, b, c, d);
+    printf("\n %d %d %d %d", a, b, c, d);
     a = funcion2(&a, c);
-    printf("\n % d % d % d % d", a, b, c, d);
+    printf("\n %d %d %d %d", a, b, c, d);
 }
 void funcion1(int r, int *b, int *c) 
 {
@@ -22,11 +22,11 @@ void funcion1(int r, int *b, int *c)
     if (r) {
         *b = *b + 2;
         *c = *c + 3;
-        printf("\n % d % d % d % d", a, *b, *c, d);
+        printf("\n %d %d %d %d", a, *b, *c, d);
     } else {
         *b = *b + 5;
         *c = *c + 4;
-        printf("\n % d % d % d % d", a, *b, *c, d);
+        printf("\n %d %d %d %d", a, *b, *c, d);
     }
 }
 int funcion2(int *d, int c) 
@@ -37,9 +37,9 @@ int funcion2(int *d, int c)
     funcion1(-1, d, &b);
     /* Observa que el parámetro d que enviamos a funcion1 es por referencia.
     Es equivalente escribir &*d a escribir solamente d. */
-    printf("\n % d % d % d % d", a, b, c, *d);
+    printf("\n %d %d %d %d", a, b, c, *d);
         c += 3;
         (*d) += 2;
-    printf("\n % d % d % d % d", a, b, c, *d);
+    printf("\n %d %d %d %d", a, b, c, *d);
     return (c);
 }

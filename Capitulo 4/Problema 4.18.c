@@ -14,7 +14,7 @@ int main(void)
         {
             while (EXP < 5500) 
             {
-                printf("\nT : % d, P : % d, Q : % d, Resultado : % d", T, P, Q, EXP);
+                printf("\nT : %d, P : %d, Q : %d, Resultado : %d", T, P, Q, EXP);
                     Q++;
                 EXP = Expresion(T, P, Q);
             }
