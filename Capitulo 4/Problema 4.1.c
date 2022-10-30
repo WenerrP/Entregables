@@ -8,7 +8,8 @@ int I;          /* Variable global. */
 int main(void) 
 {
     int CUB;
-    for (I = 1; I <= 10; I++) 
+    for (I = 1; I <= 10; I++) /* Nos permite ejecutar de manera repetitiva un
+        bloque de instrucciones */
     {
         CUB = cubo(); /* Llamada a la función cubo. */
         printf("\nEl cubo de %d es: %d", I, CUB);
