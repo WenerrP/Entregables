@@ -47,4 +47,4 @@ int main(void)
     X = *IX;     /* X toma el valor (basura) de la celda a la que apunta IX.*/
 
     printf("\nX = %d \t Y = %d \t Z[0] = %d \t Z[1] = %d \t Z[2] = %d \t Z[3] = %d \t Z[4] = %d", X, Y, Z[0], Z[1], Z[2], Z[3], Z[4]);
-    }
+}
