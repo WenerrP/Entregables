@@ -37,7 +37,7 @@ void Lectura(int VEC[], int T)
         scanf("%d", &VEC[I]);
     }
 }
-void Imprime(int VEC[], int T);
+void Imprime(int VEC[], int T)
 /* La función Imprime se utiliza para imprimir un arreglo unidimensional de T
  elementos de tipo entero. */
 
