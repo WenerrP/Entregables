@@ -15,7 +15,7 @@ int main(void)
     ingresa sea correcto. */
     do 
     {
-        printf("Ingrese el tamaño del arreglo : ");
+        printf("Ingrese el tamano del arreglo : ");
         scanf("%d", &TAM);
     } 
     while (TAM > 100 || TAM < 1);

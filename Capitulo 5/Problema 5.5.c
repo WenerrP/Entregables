@@ -24,7 +24,7 @@ void Lectura(int VEC[], int T)
 {
     int I;
     for (I = 0; I < T; I++) {
-        printf("Ingrese la calificación - 0 : 5 - del alumno %d: ", I + 1);
+        printf("Ingrese la calificacion - 0 : 5 - del alumno %d: ", I + 1);
         scanf("%d", &VEC[I]);
     }
 }
