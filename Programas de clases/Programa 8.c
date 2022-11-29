@@ -1,7 +1,7 @@
 #include <stdio.h>
 /* Archivos y caracteres.
 El programa escribe caracteres en un archivo. */
-void main(void) 
+int main(void) 
 {
     char p1;
     FILE *ar;
