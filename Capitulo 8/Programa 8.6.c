@@ -87,7 +87,7 @@ obtener el total de las ventas, se actualiza el inventario. */
         while ((I < T) && (A[I].clave < CLA)) 
         /* Se realiza una búsqueda para localizar la clave del producto. */
             I++;
-        if ((I == T) | | (A[I].clave > CLA))
+        if ((I == T) || (A[I].clave > CLA))
             printf("\nLa clave del producto es incorrecta");
         else
             if (A[I].existencia >= CAN)
@@ -118,7 +118,7 @@ obtener el total de las ventas, se actualiza el inventario. */
 void Reabastecimiento(producto A[], int T)
 /* Esta función se utiliza para reabastecer al inventario. */
 {
-    int CLA,CAN,I;
+    int CLA, CAN, I;
     printf("\nIngrese clave del producto -0 para salir-: ");
     scanf("%d", &CLA);
     while (CLA)
