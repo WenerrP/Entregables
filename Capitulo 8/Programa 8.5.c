@@ -19,9 +19,9 @@ typedef struct /* Declaracion de una estructura utilizando typedef. */
     /* Observa que uno de los campos de la estructura alumno es una union. */
 } alumno;
 void Lectura(alumno a); /* Prototipo de funcion. */
-void main(void)
+int main(void)
 {
-    alumno a1 = {120, "Maria", "Contabilidad", 8.9, "5-158-40-50"}, a2, a3;
+    alumno a1 = {120, "Maria", "Contabilidad", 8.9, "5-158-40-50"}, a0, a2, a3;
     /* Observa que solo el primer componente de una union puede recibir valores por
     medio de este tipo de asignaciones. */
     /* Para que puedas observar las diferentes formas en que los campos de las
