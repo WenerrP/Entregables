@@ -1,0 +1,109 @@
+/*Implementar un programa con la siguiente estrategia de asignación de memoria en un TAD vector:
+• Operación de creación del vector se ha de reservar memoria para Mx(20) elementos.
+• Operación de asignación de un elemento con la que se van añadiendo consecutivamente los nuevos elementos en la
+memoria reservada y si no hubiera espacio se amplía a otros Mx elementos.
+• Operación de borrado de un elemento ha de ser de tal manera que un espacio equivalente al ocupado por el elemento
+quede libre para posteriores asignaciones.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define Mx 20
+typedef int Telemento;
+struct lista
+{
+    Telemento el;
+    struct lista *Sgte;
+};
+typedef struct lista Lista;
+typedef struct
+{
+    Lista *Comienzo, *Ultimo;
+    int n;
+} Tvector;
+
+Lista * ReservaMemoria()
+{
+    Lista *Puntero1, *Puntero2;
+    int i;
+    Puntero2= (Lista*)malloc (sizeof(Lista));
+    Puntero1=Puntero2;
+    for (i = 2; i <= Mx; i++)
+    {
+        Puntero1->Sgte = (Lista*)malloc (sizeof(Lista));
+        Puntero1 = Puntero1->Sgte ;
+    }
+    Puntero1->Sgte=NULL;
+    return Puntero2;
+}
+
+void CreacionDelVector(Tvector *V)
+{
+    (*V).Comienzo = ReservaMemoria();
+    (*V).Ultimo = NULL; (*V).n = 0;
+}
+
+void AsignarUnElemento(Tvector *V, Telemento T)
+{
+    if( (*V).Ultimo == NULL)
+    {
+        (*V).Comienzo->el = T;
+        (*V).Ultimo = (*V).Comienzo;
+    }
+    else
+    {
+        if((((*V).n % Mx) == 0) && ((*V).Ultimo->Sgte ==NULL))
+            (*V).Ultimo->Sgte = ReservaMemoria();
+        (*V).Ultimo = (*V).Ultimo->Sgte;
+        (*V).Ultimo->el = T;
+    }
+    (*V).n ++ ;
+}
+
+Lista* EncuentraDireccion (Tvector V, Telemento el)
+{ 
+    Lista *Puntero1;
+    int Encontrado;
+    Encontrado = 0; Puntero1 = V.Comienzo;
+    while (! Encontrado && Puntero1 != NULL)
+    { 
+        Encontrado = Puntero1->el == el;
+        if (! Encontrado)
+            Puntero1 = Puntero1->Sgte ;
+    }
+    return Puntero1;
+}
+
+Lista * BuscaAnterior(Tvector V, Lista *Puntero1)
+{ /*Se supone que Puntero1 siempre está en V*/
+    Lista *Anterior;
+    Anterior = V.Comienzo;
+    if (Anterior != Puntero1)
+    while (Anterior->Sgte != Puntero1)
+        Anterior = Anterior->Sgte;
+    return Anterior;
+}
+
+void BorrarUnElemento(Tvector *V, Telemento T)
+{ 
+    Lista *Puntero1, *Anterior, *Aux;
+    Puntero1 = EncuentraDireccion(*V, T);
+    if (Puntero1 !=NULL)
+    {
+        Anterior = BuscaAnterior(*V, Puntero1);
+        if (Puntero1 == (*V).Ultimo)
+            (*V).Ultimo = Anterior ;
+        else
+        {
+            if ((*V).Comienzo == Puntero1)
+                (*V).Comienzo = (*V).Comienzo->Sgte;
+            else
+                Anterior->Sgte = Puntero1->Sgte;
+            /*enlaza a partir de V.Ultimo el nodo a borrar Puntero1*/
+
+            Aux = (*V).Ultimo->Sgte;
+            (*V).Ultimo->Sgte = Puntero1;
+            Puntero1->Sgte = Aux;
+        }
+        (*V).n--;
+    }
+}
